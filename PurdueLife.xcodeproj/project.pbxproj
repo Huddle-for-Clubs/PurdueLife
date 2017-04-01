@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		46730CA41E8B1BF5009C5426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CA31E8B1BF5009C5426 /* AppDelegate.swift */; };
-		46730CA61E8B1BF5009C5426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CA51E8B1BF5009C5426 /* ViewController.swift */; };
 		46730CA91E8B1BF5009C5426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46730CA71E8B1BF5009C5426 /* Main.storyboard */; };
 		46730CAB1E8B1BF5009C5426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46730CAA1E8B1BF5009C5426 /* Assets.xcassets */; };
 		46730CAE1E8B1BF5009C5426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46730CAC1E8B1BF5009C5426 /* LaunchScreen.storyboard */; };
 		46730CB91E8B1BF6009C5426 /* PurdueLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CB81E8B1BF6009C5426 /* PurdueLifeTests.swift */; };
 		46730CC41E8B1BF6009C5426 /* PurdueLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CC31E8B1BF6009C5426 /* PurdueLifeUITests.swift */; };
+		46730CD21E8B1D29009C5426 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CD11E8B1D29009C5426 /* LoginViewController.swift */; };
+		46730CD51E8B1F4A009C5426 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CD41E8B1F4A009C5426 /* HomeViewController.swift */; };
+		46730CD71E8B1F67009C5426 /* MenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CD61E8B1F67009C5426 /* MenusViewController.swift */; };
+		46730CDB1E8B1F95009C5426 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CDA1E8B1F95009C5426 /* SettingsViewController.swift */; };
+		46730CDD1E8B2014009C5426 /* DiningCourtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CDC1E8B2014009C5426 /* DiningCourtViewController.swift */; };
+		46730CDF1E8B245D009C5426 /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CDE1E8B245D009C5426 /* FoodItemCell.swift */; };
+		46730CE31E8B248A009C5426 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CE21E8B248A009C5426 /* FoodItem.swift */; };
+		46730CE61E8B24BF009C5426 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CE51E8B24BF009C5426 /* APIClient.swift */; };
+		7CE5AFEF67DDBB359593D1EC /* Pods_PurdueLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD2EA72A6DD1E3CC3644A8F /* Pods_PurdueLifeUITests.framework */; };
+		AF7EFAE37A14ADD68C06A144 /* Pods_PurdueLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3E4C40BA2C4E51791BCEB1 /* Pods_PurdueLife.framework */; };
+		F715CADA915488076D656F54 /* Pods_PurdueLifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A4FE14B77EF64246B5B57A /* Pods_PurdueLifeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E4E7EDECB5DB98584E48B46 /* Pods-PurdueLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLife/Pods-PurdueLife.debug.xcconfig"; sourceTree = "<group>"; };
+		0FD2EA72A6DD1E3CC3644A8F /* Pods_PurdueLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurdueLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2254BD822CA56DE3F314472F /* Pods-PurdueLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeUITests/Pods-PurdueLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		302C5E79E81EF4EEE9474AF7 /* Pods-PurdueLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeTests/Pods-PurdueLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		46730CA01E8B1BF5009C5426 /* PurdueLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurdueLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46730CA31E8B1BF5009C5426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46730CA51E8B1BF5009C5426 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46730CA81E8B1BF5009C5426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46730CAA1E8B1BF5009C5426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46730CAD1E8B1BF5009C5426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +60,19 @@
 		46730CBF1E8B1BF6009C5426 /* PurdueLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurdueLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46730CC31E8B1BF6009C5426 /* PurdueLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurdueLifeUITests.swift; sourceTree = "<group>"; };
 		46730CC51E8B1BF6009C5426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46730CD11E8B1D29009C5426 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		46730CD41E8B1F4A009C5426 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		46730CD61E8B1F67009C5426 /* MenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenusViewController.swift; sourceTree = "<group>"; };
+		46730CDA1E8B1F95009C5426 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		46730CDC1E8B2014009C5426 /* DiningCourtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningCourtViewController.swift; sourceTree = "<group>"; };
+		46730CDE1E8B245D009C5426 /* FoodItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
+		46730CE21E8B248A009C5426 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		46730CE51E8B24BF009C5426 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		80CE805C3556B3393FDF8971 /* Pods-PurdueLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeUITests/Pods-PurdueLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6A4FE14B77EF64246B5B57A /* Pods_PurdueLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurdueLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C44A7B884AFE31A8BA053D /* Pods-PurdueLifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeTests/Pods-PurdueLifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8811C88083AB288C76AC667 /* Pods-PurdueLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLife/Pods-PurdueLife.release.xcconfig"; sourceTree = "<group>"; };
+		DD3E4C40BA2C4E51791BCEB1 /* Pods_PurdueLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurdueLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7EFAE37A14ADD68C06A144 /* Pods_PurdueLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F715CADA915488076D656F54 /* Pods_PurdueLifeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE5AFEF67DDBB359593D1EC /* Pods_PurdueLifeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +110,8 @@
 				46730CB71E8B1BF6009C5426 /* PurdueLifeTests */,
 				46730CC21E8B1BF6009C5426 /* PurdueLifeUITests */,
 				46730CA11E8B1BF5009C5426 /* Products */,
+				A18F73D9C1F77C1463FD1583 /* Pods */,
+				5E5639B6F29C7F1074366B5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +128,11 @@
 		46730CA21E8B1BF5009C5426 /* PurdueLife */ = {
 			isa = PBXGroup;
 			children = (
+				46730CE41E8B24A0009C5426 /* API */,
+				46730CE11E8B246B009C5426 /* Model */,
+				46730CE01E8B2462009C5426 /* Views */,
+				46730CD31E8B1DAF009C5426 /* ViewControllers */,
 				46730CA31E8B1BF5009C5426 /* AppDelegate.swift */,
-				46730CA51E8B1BF5009C5426 /* ViewController.swift */,
 				46730CA71E8B1BF5009C5426 /* Main.storyboard */,
 				46730CAA1E8B1BF5009C5426 /* Assets.xcassets */,
 				46730CAC1E8B1BF5009C5426 /* LaunchScreen.storyboard */,
@@ -125,6 +159,65 @@
 			path = PurdueLifeUITests;
 			sourceTree = "<group>";
 		};
+		46730CD31E8B1DAF009C5426 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				46730CD11E8B1D29009C5426 /* LoginViewController.swift */,
+				46730CD41E8B1F4A009C5426 /* HomeViewController.swift */,
+				46730CD61E8B1F67009C5426 /* MenusViewController.swift */,
+				46730CDA1E8B1F95009C5426 /* SettingsViewController.swift */,
+				46730CDC1E8B2014009C5426 /* DiningCourtViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		46730CE01E8B2462009C5426 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46730CDE1E8B245D009C5426 /* FoodItemCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		46730CE11E8B246B009C5426 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46730CE21E8B248A009C5426 /* FoodItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		46730CE41E8B24A0009C5426 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				46730CE51E8B24BF009C5426 /* APIClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		5E5639B6F29C7F1074366B5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD3E4C40BA2C4E51791BCEB1 /* Pods_PurdueLife.framework */,
+				A6A4FE14B77EF64246B5B57A /* Pods_PurdueLifeTests.framework */,
+				0FD2EA72A6DD1E3CC3644A8F /* Pods_PurdueLifeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A18F73D9C1F77C1463FD1583 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E4E7EDECB5DB98584E48B46 /* Pods-PurdueLife.debug.xcconfig */,
+				C8811C88083AB288C76AC667 /* Pods-PurdueLife.release.xcconfig */,
+				302C5E79E81EF4EEE9474AF7 /* Pods-PurdueLifeTests.debug.xcconfig */,
+				C1C44A7B884AFE31A8BA053D /* Pods-PurdueLifeTests.release.xcconfig */,
+				80CE805C3556B3393FDF8971 /* Pods-PurdueLifeUITests.debug.xcconfig */,
+				2254BD822CA56DE3F314472F /* Pods-PurdueLifeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46730CC81E8B1BF6009C5426 /* Build configuration list for PBXNativeTarget "PurdueLife" */;
 			buildPhases = (
+				2B7EF906902B933ECCC16140 /* [CP] Check Pods Manifest.lock */,
 				46730C9C1E8B1BF5009C5426 /* Sources */,
 				46730C9D1E8B1BF5009C5426 /* Frameworks */,
 				46730C9E1E8B1BF5009C5426 /* Resources */,
+				010433178FC953DD2C54A062 /* [CP] Embed Pods Frameworks */,
+				E3D812EAFD620C2CF84EE133 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46730CCB1E8B1BF6009C5426 /* Build configuration list for PBXNativeTarget "PurdueLifeTests" */;
 			buildPhases = (
+				EFB413CC95051ACA767A779B /* [CP] Check Pods Manifest.lock */,
 				46730CB01E8B1BF6009C5426 /* Sources */,
 				46730CB11E8B1BF6009C5426 /* Frameworks */,
 				46730CB21E8B1BF6009C5426 /* Resources */,
+				80E2CAD90D348638FC868D23 /* [CP] Embed Pods Frameworks */,
+				4EEA9854A451279C833E3CFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46730CCE1E8B1BF6009C5426 /* Build configuration list for PBXNativeTarget "PurdueLifeUITests" */;
 			buildPhases = (
+				FC0373A0D0391175316515A6 /* [CP] Check Pods Manifest.lock */,
 				46730CBB1E8B1BF6009C5426 /* Sources */,
 				46730CBC1E8B1BF6009C5426 /* Frameworks */,
 				46730CBD1E8B1BF6009C5426 /* Resources */,
+				2933E72BBB3C5D358F9E4EBC /* [CP] Embed Pods Frameworks */,
+				0E551DFA442A3B9B8F528055 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +356,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		010433178FC953DD2C54A062 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurdueLife/Pods-PurdueLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E551DFA442A3B9B8F528055 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurdueLifeUITests/Pods-PurdueLifeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2933E72BBB3C5D358F9E4EBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurdueLifeUITests/Pods-PurdueLifeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B7EF906902B933ECCC16140 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4EEA9854A451279C833E3CFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurdueLifeTests/Pods-PurdueLifeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80E2CAD90D348638FC868D23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurdueLifeTests/Pods-PurdueLifeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D812EAFD620C2CF84EE133 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurdueLife/Pods-PurdueLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB413CC95051ACA767A779B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0373A0D0391175316515A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46730C9C1E8B1BF5009C5426 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46730CA61E8B1BF5009C5426 /* ViewController.swift in Sources */,
+				46730CE31E8B248A009C5426 /* FoodItem.swift in Sources */,
+				46730CD21E8B1D29009C5426 /* LoginViewController.swift in Sources */,
+				46730CDD1E8B2014009C5426 /* DiningCourtViewController.swift in Sources */,
 				46730CA41E8B1BF5009C5426 /* AppDelegate.swift in Sources */,
+				46730CD51E8B1F4A009C5426 /* HomeViewController.swift in Sources */,
+				46730CDB1E8B1F95009C5426 /* SettingsViewController.swift in Sources */,
+				46730CDF1E8B245D009C5426 /* FoodItemCell.swift in Sources */,
+				46730CD71E8B1F67009C5426 /* MenusViewController.swift in Sources */,
+				46730CE61E8B24BF009C5426 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +655,7 @@
 		};
 		46730CC91E8B1BF6009C5426 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4E7EDECB5DB98584E48B46 /* Pods-PurdueLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PurdueLife/Info.plist;
@@ -420,6 +668,7 @@
 		};
 		46730CCA1E8B1BF6009C5426 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8811C88083AB288C76AC667 /* Pods-PurdueLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PurdueLife/Info.plist;
@@ -432,6 +681,7 @@
 		};
 		46730CCC1E8B1BF6009C5426 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 302C5E79E81EF4EEE9474AF7 /* Pods-PurdueLifeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +696,7 @@
 		};
 		46730CCD1E8B1BF6009C5426 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C44A7B884AFE31A8BA053D /* Pods-PurdueLifeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +711,7 @@
 		};
 		46730CCF1E8B1BF6009C5426 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80CE805C3556B3393FDF8971 /* Pods-PurdueLifeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PurdueLifeUITests/Info.plist;
@@ -473,6 +725,7 @@
 		};
 		46730CD01E8B1BF6009C5426 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2254BD822CA56DE3F314472F /* Pods-PurdueLifeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PurdueLifeUITests/Info.plist;

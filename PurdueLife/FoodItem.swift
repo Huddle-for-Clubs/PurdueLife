@@ -7,7 +7,16 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class FoodItem: NSObject {
+    
+    var name:String = ""
+
+    init(json: JSON){
+        name = json["Name"].stringValue
+        print(name)
+        
+    }
 
 }
