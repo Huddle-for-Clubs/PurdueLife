@@ -14,14 +14,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        APIClient.sharedInstance.getMenu(diningCourt: "Wiley",date: "3-31-2017",success: {(items: [FoodItem]) in
-            self.food = items
-            
-        }, error: { (error: Error) in
-            print(error.localizedDescription)
-            
-        })
-        
+                
         
         
 //        var todaysDate:Date = Date()

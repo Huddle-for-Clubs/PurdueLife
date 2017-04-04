@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class MenusViewController: UIViewController {
+    
+    var food : JSON?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +22,26 @@ class MenusViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "wileySegue"{
+         
+            let destination = segue.destination as! DiningCourtViewController
+            
+            APIClient.sharedInstance.getMenu(diningCourt: "Wiley",date: "3-31-2017",success: {(items: JSON) in
+                self.food = items
+                //print(items)
+                destination.data = self.food!
+                
+            }, error: { (error: Error) in
+                print(error.localizedDescription)
+                
+            })
+
+            
+        }
+        
     }
     
 

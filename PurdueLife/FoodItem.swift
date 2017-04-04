@@ -12,10 +12,14 @@ import SwiftyJSON
 class FoodItem: NSObject {
     
     var name:String = ""
+    var id: String = ""
 
     init(json: JSON){
         name = json["Name"].stringValue
-        print(name)
+        id = json["ID"].stringValue
+        var veg : Bool = json["isVegetarian"].boolValue
+        print(veg)
+        //print(name)
         
     }
 
