@@ -17,7 +17,7 @@ class APIClient: NSObject {
     let baseUrl = "http://api.hfs.purdue.edu/menus/v2/"
     
     func getMenu(diningCourt: String,date: String,success: @escaping ([FoodItem]) -> (),error: @escaping (Error) -> ()){
-        Alamofire.request("location/" + baseUrl + diningCourt + "/" + date, method: .get, encoding: URLEncoding.default , headers: ["Accept" : "application/json"]).validate().responseJSON{response in
+        Alamofire.request(baseUrl + "locations/" + diningCourt + "/" + date, method: .get, encoding: URLEncoding.default , headers: ["Accept" : "application/json"]).validate().responseJSON{response in
             if response.result.isSuccess {
                 guard let info = response.result.value else {
                     print("Error")

@@ -9,16 +9,26 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    var food : [FoodItem] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //APIClient.sharedInstance.getMenu(diningCourt: "Wiley",date: "3-31-2017")
+        APIClient.sharedInstance.getMenu(diningCourt: "Wiley",date: "3-31-2017",success: {(items: [FoodItem]) in
+            self.food = items
+            
+        }, error: { (error: Error) in
+            print(error.localizedDescription)
+            
+        })
         
-        var todaysDate:Date = Date()
-        var dateFormatter:DateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm:ss"
-        var DateInFormat:String = dateFormatter.string(from: todaysDate)
-        print(DateInFormat)
+        
+        
+//        var todaysDate:Date = Date()
+//        var dateFormatter:DateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm:ss"
+//        var DateInFormat:String = dateFormatter.string(from: todaysDate)
+//        print(DateInFormat)
 
         // Do any additional setup after loading the view.
     }

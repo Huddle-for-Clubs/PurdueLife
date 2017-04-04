@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4612125F1E93462300F7D6D7 /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612125E1E93462300F7D6D7 /* FoodItemCell.swift */; };
 		46730CA41E8B1BF5009C5426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CA31E8B1BF5009C5426 /* AppDelegate.swift */; };
 		46730CA91E8B1BF5009C5426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46730CA71E8B1BF5009C5426 /* Main.storyboard */; };
 		46730CAB1E8B1BF5009C5426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46730CAA1E8B1BF5009C5426 /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		46730CD71E8B1F67009C5426 /* MenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CD61E8B1F67009C5426 /* MenusViewController.swift */; };
 		46730CDB1E8B1F95009C5426 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CDA1E8B1F95009C5426 /* SettingsViewController.swift */; };
 		46730CDD1E8B2014009C5426 /* DiningCourtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CDC1E8B2014009C5426 /* DiningCourtViewController.swift */; };
-		46730CDF1E8B245D009C5426 /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CDE1E8B245D009C5426 /* FoodItemCell.swift */; };
 		46730CE31E8B248A009C5426 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CE21E8B248A009C5426 /* FoodItem.swift */; };
 		46730CE61E8B24BF009C5426 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CE51E8B24BF009C5426 /* APIClient.swift */; };
 		7CE5AFEF67DDBB359593D1EC /* Pods_PurdueLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD2EA72A6DD1E3CC3644A8F /* Pods_PurdueLifeUITests.framework */; };
@@ -48,6 +48,7 @@
 		0FD2EA72A6DD1E3CC3644A8F /* Pods_PurdueLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurdueLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2254BD822CA56DE3F314472F /* Pods-PurdueLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeUITests/Pods-PurdueLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		302C5E79E81EF4EEE9474AF7 /* Pods-PurdueLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeTests/Pods-PurdueLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4612125E1E93462300F7D6D7 /* FoodItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
 		46730CA01E8B1BF5009C5426 /* PurdueLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurdueLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46730CA31E8B1BF5009C5426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46730CA81E8B1BF5009C5426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		46730CD61E8B1F67009C5426 /* MenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenusViewController.swift; sourceTree = "<group>"; };
 		46730CDA1E8B1F95009C5426 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		46730CDC1E8B2014009C5426 /* DiningCourtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningCourtViewController.swift; sourceTree = "<group>"; };
-		46730CDE1E8B245D009C5426 /* FoodItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
 		46730CE21E8B248A009C5426 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		46730CE51E8B24BF009C5426 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		80CE805C3556B3393FDF8971 /* Pods-PurdueLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeUITests/Pods-PurdueLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 		46730CE01E8B2462009C5426 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				46730CDE1E8B245D009C5426 /* FoodItemCell.swift */,
+				4612125E1E93462300F7D6D7 /* FoodItemCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -505,7 +505,7 @@
 				46730CA41E8B1BF5009C5426 /* AppDelegate.swift in Sources */,
 				46730CD51E8B1F4A009C5426 /* HomeViewController.swift in Sources */,
 				46730CDB1E8B1F95009C5426 /* SettingsViewController.swift in Sources */,
-				46730CDF1E8B245D009C5426 /* FoodItemCell.swift in Sources */,
+				4612125F1E93462300F7D6D7 /* FoodItemCell.swift in Sources */,
 				46730CD71E8B1F67009C5426 /* MenusViewController.swift in Sources */,
 				46730CE61E8B24BF009C5426 /* APIClient.swift in Sources */,
 			);
@@ -756,6 +756,7 @@
 				46730CCA1E8B1BF6009C5426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46730CCB1E8B1BF6009C5426 /* Build configuration list for PBXNativeTarget "PurdueLifeTests" */ = {
 			isa = XCConfigurationList;
@@ -764,6 +765,7 @@
 				46730CCD1E8B1BF6009C5426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46730CCE1E8B1BF6009C5426 /* Build configuration list for PBXNativeTarget "PurdueLifeUITests" */ = {
 			isa = XCConfigurationList;
@@ -772,6 +774,7 @@
 				46730CD01E8B1BF6009C5426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
