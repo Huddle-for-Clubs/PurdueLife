@@ -5,9 +5,9 @@ Choosing which dining court to eat at can be annoying process, especially when y
 # User Stories
 The following is **required**:
 - [x] User can view dining court menus 
-- [ ] User can add favorite food
-- [ ] User can edit food preferences
-- [ ] User can 'like' food
+- [x] User can add favorite food
+- [x] User can edit food preferences
+- [x] User can 'like' food
 
 The following are **optional**:
 - [ ] Custom backend used for data analysis
