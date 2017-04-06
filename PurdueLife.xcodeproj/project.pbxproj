@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4612125F1E93462300F7D6D7 /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612125E1E93462300F7D6D7 /* FoodItemCell.swift */; };
+		461212611E94162000F7D6D7 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461212601E94162000F7D6D7 /* FavoritesViewController.swift */; };
+		461212631E941C1300F7D6D7 /* FavoriteFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461212621E941C1300F7D6D7 /* FavoriteFoodCell.swift */; };
+		461212651E94243000F7D6D7 /* FavoriteFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461212641E94243000F7D6D7 /* FavoriteFoodViewController.swift */; };
+		466A42921E944828008DD3AF /* FoodItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A42911E944828008DD3AF /* FoodItemViewController.swift */; };
+		466A42941E944BF3008DD3AF /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A42931E944BF3008DD3AF /* DetailCell.swift */; };
+		466A42961E944C6E008DD3AF /* FoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A42951E944C6E008DD3AF /* FoodDetail.swift */; };
 		46730CA41E8B1BF5009C5426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CA31E8B1BF5009C5426 /* AppDelegate.swift */; };
 		46730CA91E8B1BF5009C5426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46730CA71E8B1BF5009C5426 /* Main.storyboard */; };
 		46730CAB1E8B1BF5009C5426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46730CAA1E8B1BF5009C5426 /* Assets.xcassets */; };
@@ -49,6 +55,12 @@
 		2254BD822CA56DE3F314472F /* Pods-PurdueLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeUITests/Pods-PurdueLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		302C5E79E81EF4EEE9474AF7 /* Pods-PurdueLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeTests/Pods-PurdueLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4612125E1E93462300F7D6D7 /* FoodItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
+		461212601E94162000F7D6D7 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		461212621E941C1300F7D6D7 /* FavoriteFoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteFoodCell.swift; sourceTree = "<group>"; };
+		461212641E94243000F7D6D7 /* FavoriteFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteFoodViewController.swift; sourceTree = "<group>"; };
+		466A42911E944828008DD3AF /* FoodItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemViewController.swift; sourceTree = "<group>"; };
+		466A42931E944BF3008DD3AF /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		466A42951E944C6E008DD3AF /* FoodDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodDetail.swift; sourceTree = "<group>"; };
 		46730CA01E8B1BF5009C5426 /* PurdueLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurdueLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46730CA31E8B1BF5009C5426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46730CA81E8B1BF5009C5426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +179,9 @@
 				46730CD61E8B1F67009C5426 /* MenusViewController.swift */,
 				46730CDA1E8B1F95009C5426 /* SettingsViewController.swift */,
 				46730CDC1E8B2014009C5426 /* DiningCourtViewController.swift */,
+				466A42911E944828008DD3AF /* FoodItemViewController.swift */,
+				461212601E94162000F7D6D7 /* FavoritesViewController.swift */,
+				461212641E94243000F7D6D7 /* FavoriteFoodViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				4612125E1E93462300F7D6D7 /* FoodItemCell.swift */,
+				461212621E941C1300F7D6D7 /* FavoriteFoodCell.swift */,
+				466A42931E944BF3008DD3AF /* DetailCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -183,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				46730CE21E8B248A009C5426 /* FoodItem.swift */,
+				466A42951E944C6E008DD3AF /* FoodDetail.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -499,14 +517,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461212651E94243000F7D6D7 /* FavoriteFoodViewController.swift in Sources */,
 				46730CE31E8B248A009C5426 /* FoodItem.swift in Sources */,
+				466A42961E944C6E008DD3AF /* FoodDetail.swift in Sources */,
 				46730CD21E8B1D29009C5426 /* LoginViewController.swift in Sources */,
 				46730CDD1E8B2014009C5426 /* DiningCourtViewController.swift in Sources */,
+				466A42921E944828008DD3AF /* FoodItemViewController.swift in Sources */,
+				461212631E941C1300F7D6D7 /* FavoriteFoodCell.swift in Sources */,
 				46730CA41E8B1BF5009C5426 /* AppDelegate.swift in Sources */,
 				46730CD51E8B1F4A009C5426 /* HomeViewController.swift in Sources */,
 				46730CDB1E8B1F95009C5426 /* SettingsViewController.swift in Sources */,
 				4612125F1E93462300F7D6D7 /* FoodItemCell.swift in Sources */,
 				46730CD71E8B1F67009C5426 /* MenusViewController.swift in Sources */,
+				461212611E94162000F7D6D7 /* FavoritesViewController.swift in Sources */,
+				466A42941E944BF3008DD3AF /* DetailCell.swift in Sources */,
 				46730CE61E8B24BF009C5426 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

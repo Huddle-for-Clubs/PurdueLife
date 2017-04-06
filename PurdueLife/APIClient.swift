@@ -37,32 +37,39 @@ class APIClient: NSObject {
             }
     }
     
-    func getItemInfo(id: String, success: @escaping () -> (),error: @escaping (Error) -> ()){
+    func getItemInfo(id: String, success: @escaping (JSON) -> (),error: @escaping (Error) -> ()){
         Alamofire.request(baseUrl + "items/" + id, method: .get, encoding: URLEncoding.default, headers: ["Accept" : "application/json"]).validate().responseJSON{response in
             if response.result.isSuccess{
                 guard let info = response.result.value else {
                     print("Error")
                     return
                 }
+                
                 let json = JSON(info)
-                print(json)
+                //print(json)
+                success(json)
             }else{
                 print("Error")
             }
         }
     }
     
-    func getAhead(name: String,success: @escaping () -> (),error: @escaping (Error) -> ()){
-        Alamofire.request(baseUrl + "items/searchUpcoming/" + name, method: .get, encoding: URLEncoding.default, headers: ["Accept" : "application/json"]).validate().responseJSON{response in
+    func getAhead(name: String,success: @escaping (JSON) -> (),error: @escaping (Error) -> ()){
+        var url = baseUrl + "items/searchUpcoming/" + name
+        var formattedUrl = url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)
+        print(formattedUrl)
+        Alamofire.request(formattedUrl!, method: .get, encoding: URLEncoding.default, headers: ["Accept" : "application/json"]).validate().responseJSON{response in
+            print(response)
             if response.result.isSuccess{
                 guard let info = response.result.value else {
                     print("Error")
                     return
                 }
                 let json = JSON(info)
-                print(json)
+                //print(json)
+                success(json)
             }else{
-                print("Error")
+                print("Error here")
             }
         }
 

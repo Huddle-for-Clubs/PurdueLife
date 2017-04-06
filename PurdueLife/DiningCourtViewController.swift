@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import MBProgressHUD
 
 class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
@@ -16,6 +17,7 @@ class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableVi
     var data: JSON? {
         didSet{
             getData()
+            MBProgressHUD.hide(for: self.view, animated: true)
         }
     }
     var meals : [[FoodItem]] = []
@@ -30,6 +32,7 @@ class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableVi
         defaults.synchronize()
         tableView.delegate = self
         tableView.dataSource = self
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         //getData()
         
 
@@ -53,14 +56,14 @@ class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableVi
         
         switch mealValue{
         case 1:
-            print("here")
+            //print("here")
             //print(meals![1])
             let lunch = meals![1]
             let stations = lunch["Stations"].arrayValue
-            print(lunch)
+            //print(lunch)
             
             for station in stations{
-                                  print(station["Name"].stringValue)
+                                  //print(station["Name"].stringValue)
                 self.sectionTitles.append(station["Name"].stringValue)
                 let section = station["Items"].arrayValue
                 var temp: [FoodItem?] = []
@@ -142,7 +145,7 @@ class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableVi
         guard let itemInfo = menuItems[indexPath.section][row] else {
             return cell
         }
-        print("\(itemInfo.name)")
+        //print("\(itemInfo.name)")
         
         cell.nameLabel.text = itemInfo.name
         //        cell.name2.text = itemInfo.name
@@ -212,6 +215,23 @@ class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableVi
             print("error with switch")
         }
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! FoodItemCell
+        
+        let destination = segue.destination as! FoodItemViewController
+        
+        let section = self.tableView.indexPath(for: cell)?.section
+        
+        let row = self.tableView.indexPath(for: cell)?.row
+        
+        let info = menuItems[section!][row!]
+        
+        destination.id = info!.id
+        
+        
+                
     }
    
     /*

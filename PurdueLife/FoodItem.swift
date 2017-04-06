@@ -18,7 +18,7 @@ class FoodItem: NSObject {
         name = json["Name"].stringValue
         id = json["ID"].stringValue
         var veg : Bool = json["isVegetarian"].boolValue
-        print(veg)
+        //print(veg)
         //print(name)
         
     }

@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PurdueLife.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,17 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>1CB0D5DE55CBC369B6253608E2B97B53</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>454889974C5D71E3E92E9F556575ED08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>688922F42185F7402B125BEEA54E33C6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6A0C6A11E2FFA5023F85AAC249462AE4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8084B37BF18E57EA16C06CA3295259FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

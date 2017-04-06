@@ -26,6 +26,21 @@ class FoodItemCell: UITableViewCell {
 
     @IBAction func onLike(_ sender: Any) {
         likeButton.setImage(UIImage(named: "favor-icon-red"), for: .normal)
+        let defaults  = UserDefaults.standard
+        
+        var favorites = defaults.stringArray(forKey: "favorites")
+        
+        if favorites == nil{
+            let temp:[String] = [nameLabel.text!]
+            defaults.set(temp , forKey: "favorites")
+        }else{
+            favorites?.append(nameLabel.text!)
+            defaults.set(favorites! , forKey: "favorites")
+            for item in favorites!{
+                print(item)
+            }
+        }
+        
 
     }
 }

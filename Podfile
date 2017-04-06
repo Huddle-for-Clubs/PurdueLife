@@ -12,6 +12,7 @@ pod 'Firebase/Database'
 pod 'AFNetworking'
 pod 'SwiftyJSON'
 pod 'Alamofire'
+pod 'MBProgressHUD'
 
   target 'PurdueLifeTests' do
     inherit! :search_paths

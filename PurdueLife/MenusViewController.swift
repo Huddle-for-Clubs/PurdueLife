@@ -40,7 +40,60 @@ class MenusViewController: UIViewController {
             })
 
             
+        }else if segue.identifier == "fordSegue"{
+            print("ford")
+            let destination = segue.destination as! DiningCourtViewController
+            
+            APIClient.sharedInstance.getMenu(diningCourt: "Ford",date: "3-31-2017",success: {(items: JSON) in
+                self.food = items
+                print(items)
+                destination.data = self.food!
+                
+            }, error: { (error: Error) in
+                print(error.localizedDescription)
+                
+            })
+        }else if segue.identifier == "earhartSegue"{
+            let destination = segue.destination as! DiningCourtViewController
+            
+            APIClient.sharedInstance.getMenu(diningCourt: "Earhart",date: "3-31-2017",success: {(items: JSON) in
+                self.food = items
+                //print(items)
+                destination.data = self.food!
+                
+            }, error: { (error: Error) in
+                print(error.localizedDescription)
+                
+            })
+
+        }else if segue.identifier == "windsorSegue"{
+            let destination = segue.destination as! DiningCourtViewController
+            
+            APIClient.sharedInstance.getMenu(diningCourt: "Windsor",date: "3-31-2017",success: {(items: JSON) in
+                self.food = items
+                //print(items)
+                destination.data = self.food!
+                
+            }, error: { (error: Error) in
+                print(error.localizedDescription)
+                
+            })
+
+        }else if segue.identifier == "hillenbrandSegue" {
+            let destination = segue.destination as! DiningCourtViewController
+            
+            APIClient.sharedInstance.getMenu(diningCourt: "Hillenbrand",date: "3-31-2017",success: {(items: JSON) in
+                self.food = items
+                //print(items)
+                destination.data = self.food!
+                
+            }, error: { (error: Error) in
+                print(error.localizedDescription)
+                
+            })
+
         }
+
         
     }
     
