@@ -24,6 +24,17 @@ class MenusViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+    }
+    
+        
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "wileySegue"{
          
@@ -41,12 +52,12 @@ class MenusViewController: UIViewController {
 
             
         }else if segue.identifier == "fordSegue"{
-            print("ford")
+            //print("ford")
             let destination = segue.destination as! DiningCourtViewController
             
             APIClient.sharedInstance.getMenu(diningCourt: "Ford",date: "3-31-2017",success: {(items: JSON) in
                 self.food = items
-                print(items)
+                //print(items)
                 destination.data = self.food!
                 
             }, error: { (error: Error) in

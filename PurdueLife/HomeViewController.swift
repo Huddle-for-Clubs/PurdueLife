@@ -31,6 +31,16 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tabBarController?.tabBar.barTintColor = UIColor.black
+        self.tabBarController?.tabBar.tintColor = UIColor.white
+        
+        //self.tabBarController?.tabBarItem. = UIColor.white
+    }
+
+    
 
     /*
     // MARK: - Navigation

@@ -41,6 +41,12 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        
         let defaults  = UserDefaults.standard
 
         var favorites = defaults.stringArray(forKey: "favorites")
@@ -87,8 +93,10 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         let name = favorites[row!]
         
-        print(name)
+        destination.name = name
         
+//        print(name)
+       
        
        
     }

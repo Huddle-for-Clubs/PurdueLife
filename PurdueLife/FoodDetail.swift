@@ -19,7 +19,7 @@ class FoodDetail: NSObject {
     init(json : JSON){
         self.name = json["Name"].stringValue
         self.nutrition = json["Nutrition"].arrayValue
-        print(self.nutrition)
+        //print(self.nutrition)
         
         let tempArray: [JSON] = json["Allergens"].arrayValue
         for allergen in tempArray{
@@ -35,7 +35,7 @@ class FoodDetail: NSObject {
         
         self.ingrediants = json["Ingredients"].stringValue
         
-        print(name)
+        //print(name)
         
     }
 

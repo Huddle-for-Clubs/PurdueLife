@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460D042C1E9AC5DC004BA3D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 460D042B1E9AC5DC004BA3D9 /* GoogleService-Info.plist */; };
 		4612125F1E93462300F7D6D7 /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612125E1E93462300F7D6D7 /* FoodItemCell.swift */; };
 		461212611E94162000F7D6D7 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461212601E94162000F7D6D7 /* FavoritesViewController.swift */; };
 		461212631E941C1300F7D6D7 /* FavoriteFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461212621E941C1300F7D6D7 /* FavoriteFoodCell.swift */; };
@@ -14,6 +15,7 @@
 		466A42921E944828008DD3AF /* FoodItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A42911E944828008DD3AF /* FoodItemViewController.swift */; };
 		466A42941E944BF3008DD3AF /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A42931E944BF3008DD3AF /* DetailCell.swift */; };
 		466A42961E944C6E008DD3AF /* FoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A42951E944C6E008DD3AF /* FoodDetail.swift */; };
+		466A42991E96E925008DD3AF /* hemi head bd it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 466A42981E96E90D008DD3AF /* hemi head bd it.ttf */; };
 		46730CA41E8B1BF5009C5426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46730CA31E8B1BF5009C5426 /* AppDelegate.swift */; };
 		46730CA91E8B1BF5009C5426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46730CA71E8B1BF5009C5426 /* Main.storyboard */; };
 		46730CAB1E8B1BF5009C5426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46730CAA1E8B1BF5009C5426 /* Assets.xcassets */; };
@@ -54,6 +56,7 @@
 		0FD2EA72A6DD1E3CC3644A8F /* Pods_PurdueLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurdueLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2254BD822CA56DE3F314472F /* Pods-PurdueLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeUITests/Pods-PurdueLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		302C5E79E81EF4EEE9474AF7 /* Pods-PurdueLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeTests/Pods-PurdueLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		460D042B1E9AC5DC004BA3D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4612125E1E93462300F7D6D7 /* FoodItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
 		461212601E94162000F7D6D7 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		461212621E941C1300F7D6D7 /* FavoriteFoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteFoodCell.swift; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		466A42911E944828008DD3AF /* FoodItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemViewController.swift; sourceTree = "<group>"; };
 		466A42931E944BF3008DD3AF /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		466A42951E944C6E008DD3AF /* FoodDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodDetail.swift; sourceTree = "<group>"; };
+		466A42981E96E90D008DD3AF /* hemi head bd it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hemi head bd it.ttf"; sourceTree = "<group>"; };
 		46730CA01E8B1BF5009C5426 /* PurdueLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurdueLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46730CA31E8B1BF5009C5426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46730CA81E8B1BF5009C5426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		466A42971E96E8F7008DD3AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				466A42981E96E90D008DD3AF /* hemi head bd it.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		46730C971E8B1BF5009C5426 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +152,7 @@
 		46730CA21E8B1BF5009C5426 /* PurdueLife */ = {
 			isa = PBXGroup;
 			children = (
+				466A42971E96E8F7008DD3AF /* Resources */,
 				46730CE41E8B24A0009C5426 /* API */,
 				46730CE11E8B246B009C5426 /* Model */,
 				46730CE01E8B2462009C5426 /* Views */,
@@ -149,6 +162,7 @@
 				46730CAA1E8B1BF5009C5426 /* Assets.xcassets */,
 				46730CAC1E8B1BF5009C5426 /* LaunchScreen.storyboard */,
 				46730CAF1E8B1BF5009C5426 /* Info.plist */,
+				460D042B1E9AC5DC004BA3D9 /* GoogleService-Info.plist */,
 			);
 			path = PurdueLife;
 			sourceTree = "<group>";
@@ -354,7 +368,9 @@
 			files = (
 				46730CAE1E8B1BF5009C5426 /* LaunchScreen.storyboard in Resources */,
 				46730CAB1E8B1BF5009C5426 /* Assets.xcassets in Resources */,
+				460D042C1E9AC5DC004BA3D9 /* GoogleService-Info.plist in Resources */,
 				46730CA91E8B1BF5009C5426 /* Main.storyboard in Resources */,
+				466A42991E96E925008DD3AF /* hemi head bd it.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

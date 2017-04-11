@@ -55,11 +55,11 @@ class APIClient: NSObject {
     }
     
     func getAhead(name: String,success: @escaping (JSON) -> (),error: @escaping (Error) -> ()){
-        var url = baseUrl + "items/searchUpcoming/" + name
-        var formattedUrl = url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)
-        print(formattedUrl)
+        let url = baseUrl + "items/searchUpcoming/" + name
+        let formattedUrl = url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)
+        //print(formattedUrl)
         Alamofire.request(formattedUrl!, method: .get, encoding: URLEncoding.default, headers: ["Accept" : "application/json"]).validate().responseJSON{response in
-            print(response)
+            //print(response)
             if response.result.isSuccess{
                 guard let info = response.result.value else {
                     print("Error")

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>148269278943-42je6vm8vqk31n8i3blc03svhdmm10o4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.148269278943-42je6vm8vqk31n8i3blc03svhdmm10o4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCReSdiu-ApuLKYEVv7Bnai03fF2egah6A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>148269278943</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>youssefelabd.com.PurdueLife</string>
+	<key>PROJECT_ID</key>
+	<string>purdue-life</string>
+	<key>STORAGE_BUCKET</key>
+	<string>purdue-life.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:148269278943:ios:2633bc339ee3a162</string>
+	<key>DATABASE_URL</key>
+	<string>https://purdue-life.firebaseio.com</string>
+</dict>
+</plist>
