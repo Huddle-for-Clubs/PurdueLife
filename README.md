@@ -18,4 +18,4 @@ The following are **optional**:
 
 # User Stories
 
-![alt tag](/FirstWireFrame.jpg)
+![alt tag](/demo.gif)
