@@ -16,6 +16,5 @@ The following are **optional**:
 - [ ] Push notification an hour before each meal about food options
 - [ ] Track meal swipes
 
-# User Stories
-
+# Demo
 ![alt tag](/demo.gif)
