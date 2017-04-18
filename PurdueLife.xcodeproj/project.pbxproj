@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		460D042C1E9AC5DC004BA3D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 460D042B1E9AC5DC004BA3D9 /* GoogleService-Info.plist */; };
+		460D042E1E9EA02B004BA3D9 /* IndvItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460D042D1E9EA02B004BA3D9 /* IndvItemViewController.swift */; };
+		460D04301E9EA921004BA3D9 /* IndvItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460D042F1E9EA921004BA3D9 /* IndvItemCell.swift */; };
 		4612125F1E93462300F7D6D7 /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612125E1E93462300F7D6D7 /* FoodItemCell.swift */; };
 		461212611E94162000F7D6D7 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461212601E94162000F7D6D7 /* FavoritesViewController.swift */; };
 		461212631E941C1300F7D6D7 /* FavoriteFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461212621E941C1300F7D6D7 /* FavoriteFoodCell.swift */; };
@@ -57,6 +59,8 @@
 		2254BD822CA56DE3F314472F /* Pods-PurdueLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeUITests/Pods-PurdueLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		302C5E79E81EF4EEE9474AF7 /* Pods-PurdueLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueLifeTests/Pods-PurdueLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		460D042B1E9AC5DC004BA3D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		460D042D1E9EA02B004BA3D9 /* IndvItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndvItemViewController.swift; sourceTree = "<group>"; };
+		460D042F1E9EA921004BA3D9 /* IndvItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndvItemCell.swift; sourceTree = "<group>"; };
 		4612125E1E93462300F7D6D7 /* FoodItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
 		461212601E94162000F7D6D7 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		461212621E941C1300F7D6D7 /* FavoriteFoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteFoodCell.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 				46730CD61E8B1F67009C5426 /* MenusViewController.swift */,
 				46730CDA1E8B1F95009C5426 /* SettingsViewController.swift */,
 				46730CDC1E8B2014009C5426 /* DiningCourtViewController.swift */,
+				460D042D1E9EA02B004BA3D9 /* IndvItemViewController.swift */,
 				466A42911E944828008DD3AF /* FoodItemViewController.swift */,
 				461212601E94162000F7D6D7 /* FavoritesViewController.swift */,
 				461212641E94243000F7D6D7 /* FavoriteFoodViewController.swift */,
@@ -206,6 +211,7 @@
 				4612125E1E93462300F7D6D7 /* FoodItemCell.swift */,
 				461212621E941C1300F7D6D7 /* FavoriteFoodCell.swift */,
 				466A42931E944BF3008DD3AF /* DetailCell.swift */,
+				460D042F1E9EA921004BA3D9 /* IndvItemCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -539,11 +545,13 @@
 				46730CD21E8B1D29009C5426 /* LoginViewController.swift in Sources */,
 				46730CDD1E8B2014009C5426 /* DiningCourtViewController.swift in Sources */,
 				466A42921E944828008DD3AF /* FoodItemViewController.swift in Sources */,
+				460D042E1E9EA02B004BA3D9 /* IndvItemViewController.swift in Sources */,
 				461212631E941C1300F7D6D7 /* FavoriteFoodCell.swift in Sources */,
 				46730CA41E8B1BF5009C5426 /* AppDelegate.swift in Sources */,
 				46730CD51E8B1F4A009C5426 /* HomeViewController.swift in Sources */,
 				46730CDB1E8B1F95009C5426 /* SettingsViewController.swift in Sources */,
 				4612125F1E93462300F7D6D7 /* FoodItemCell.swift in Sources */,
+				460D04301E9EA921004BA3D9 /* IndvItemCell.swift in Sources */,
 				46730CD71E8B1F67009C5426 /* MenusViewController.swift in Sources */,
 				461212611E94162000F7D6D7 /* FavoritesViewController.swift in Sources */,
 				466A42941E944BF3008DD3AF /* DetailCell.swift in Sources */,

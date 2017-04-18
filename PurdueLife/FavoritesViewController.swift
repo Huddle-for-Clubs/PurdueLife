@@ -8,12 +8,13 @@
 
 import UIKit
 import SwiftyJSON
+import Firebase
 
 class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var favorites: [String] = []
+    var favorites: [String] = ["You have no favorites!"]
 
     
     override func viewDidLoad() {
@@ -23,14 +24,61 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         let defaults  = UserDefaults.standard
         
-        var favorites = defaults.stringArray(forKey: "favorites")
-        
-        if favorites == nil{
-           print("dne")
-        }else{
-            self.favorites = favorites!
-        }
+//        var favorites = defaults.stringArray(forKey: "favorites")
+//        
+//        if favorites == nil{
+//           print("dne")
+//        }else{
+//            self.favorites = favorites!
+//        }
 
+        var dataRef = FIRDatabase.database().reference()
+        
+        let user = FIRAuth.auth()?.currentUser
+        
+        let ref = dataRef.child("users").child((user?.uid)!)
+        
+        
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            if(snapshot.hasChild("favorites")){
+                print("Exists")
+                let value = snapshot.value as? NSDictionary
+                
+                var favorites = value?["favorites"] as? [String]
+                
+                if let favorites = favorites{
+                    self.favorites = favorites
+                    self.tableView.reloadData()
+                    
+                }else{
+                    print("Error with favorites")
+                }
+                //                var tempArray = (ref.child("favorites").value as? [String])
+                //                tempArray.append(self.nameLabel.text!)
+               
+                
+            }else{
+//                let alert = UIAlertController(title: "Ooops!", message: "It looks like you don't have any likes!", preferredStyle: .alert)
+//                
+//                let ok = UIAlertAction(title: "OK", style: .cancel, handler: { (alert) in
+//                    self.parent?.dismiss(animated: true, completion:{
+//                        
+//                    })
+//                })
+//                
+//                alert.addAction(ok)
+//                
+//                self.present(alert, animated: true, completion: {
+//                    
+//                })
+
+                
+                print("doesnt")
+                
+            }
+        })
+
+        
 
         // Do any additional setup after loading the view.
     }
@@ -47,15 +95,47 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         
-        let defaults  = UserDefaults.standard
-
-        var favorites = defaults.stringArray(forKey: "favorites")
+//        let defaults  = UserDefaults.standard
+//
+//        var favorites = defaults.stringArray(forKey: "favorites")
+//        
+//        if favorites == nil{
+//            print("dne")
+//        }else{
+//            self.favorites = favorites!
+//        }
         
-        if favorites == nil{
-            print("dne")
-        }else{
-            self.favorites = favorites!
-        }
+        var dataRef = FIRDatabase.database().reference()
+        
+        let user = FIRAuth.auth()?.currentUser
+        
+        let ref = dataRef.child("users").child((user?.uid)!)
+        
+        
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            if(snapshot.hasChild("favorites")){
+                print("Exists")
+                let value = snapshot.value as? NSDictionary
+                
+                var favorites = value?["favorites"] as? [String]
+                
+                if let favorites = favorites{
+                    self.favorites = favorites
+                    self.tableView.reloadData()
+                    
+                }else{
+                    print("Error with favorites")
+                }
+                //                var tempArray = (ref.child("favorites").value as? [String])
+                //                tempArray.append(self.nameLabel.text!)
+                
+                
+            }else{
+                print("doesnt")
+                
+            }
+        })
+
         tableView.reloadData()
 
     }

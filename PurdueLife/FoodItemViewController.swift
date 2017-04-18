@@ -77,7 +77,6 @@ class FoodItemViewController: UIViewController, UITableViewDataSource, UITableVi
         
         let data = nutInfo[row]
         
-        
         cell.nameLabel.text = "\(data["Name"].stringValue): \(data["LabelValue"].stringValue)"
         //        cell.name2.text = itemInfo.name
         

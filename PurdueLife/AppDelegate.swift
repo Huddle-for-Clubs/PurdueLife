@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FIRApp.configure()
         
+        //try! FIRAuth.auth()!.signOut()
 //        if (FIRAuth.auth()?.currentUser != nil){
 //            print("User is logged in")
 //            

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import SwipeCellKit
+import SwiftDate
 
 class FoodItemCell: UITableViewCell {
 
@@ -16,6 +19,7 @@ class FoodItemCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        likeButton.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -37,10 +41,53 @@ class FoodItemCell: UITableViewCell {
             favorites?.append(nameLabel.text!)
             defaults.set(favorites! , forKey: "favorites")
             for item in favorites!{
-                print(item)
+                //print(item)
             }
         }
         
+        var dataRef = FIRDatabase.database().reference()
+        
+        let user = FIRAuth.auth()?.currentUser
+        
+        let ref = dataRef.child("users").child((user?.uid)!)
+        
+        
+        
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            if(snapshot.hasChild("favorites")){
+                print("Exists")
+                let value = snapshot.value as? NSDictionary
+                
+                var favorites = value?["favorites"] as? [String]
+                favorites?.append(self.nameLabel.text!)
+                
+//                var tempArray = (ref.child("favorites").value as? [String])
+//                tempArray.append(self.nameLabel.text!)
+               ref.child("favorites").setValue(favorites)
+                let array = ["ksdjg"]
+                let date = DateInRegion()
+                let dateString = date.string(format: .custom("MM-dd-yyyy"))
+                dataRef.child("likes").child(dateString).setValue(array)
+                
+            }else{
+                
+                print("doesnt")
+                ref.child("favorites").setValue([self.nameLabel.text!])
+            }
+        })
+        
+        
+//        var postInfo: [String: String] = [:]
+//        postInfo["name"] = nameLabel.text!
+//        
+//        
+//        
+//        ref.setValue(postInfo)
+//        
+
+        
 
     }
+    
+    
 }

@@ -9,9 +9,11 @@
 import UIKit
 import SwiftyJSON
 import MBProgressHUD
+import SwipeCellKit
 
 class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
+    var diningCourt: String = ""
     var sectionTitles: [String] = []
     var menuItems: [[FoodItem?]] = []
     var data: JSON? {
@@ -33,6 +35,8 @@ class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableVi
         tableView.delegate = self
         tableView.dataSource = self
         MBProgressHUD.showAdded(to: self.view, animated: true)
+        print("the dining court is \(self.diningCourt)")
+        self.title = self.diningCourt
         //getData()
         
 
@@ -169,7 +173,21 @@ class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableVi
         //Change the selected background view of the cell.
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
 
+        view.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1.0)
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = UIColor.white
+        header.textLabel?.font = UIFont(name: "ArialRoundedMTBold", size: 20)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
+   
+   
     @IBAction func onRight(_ sender: Any) {
         let defaults  = UserDefaults.standard
         let mealValue = defaults.integer(forKey: "meal")
@@ -225,7 +243,7 @@ class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! FoodItemCell
         
-        let destination = segue.destination as! FoodItemViewController
+        let destination = segue.destination as! IndvItemViewController
         
         let section = self.tableView.indexPath(for: cell)?.section
         
@@ -238,6 +256,9 @@ class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableVi
         
                 
     }
+    
+    
+    
    
     /*
     // MARK: - Navigation
@@ -250,3 +271,4 @@ class DiningCourtViewController: UIViewController,UITableViewDelegate, UITableVi
     */
 
 }
+

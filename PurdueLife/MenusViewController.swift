@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import SwiftDate
 
 class MenusViewController: UIViewController {
     
@@ -36,14 +37,18 @@ class MenusViewController: UIViewController {
     
         
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let date = DateInRegion()
+        let dateString = date.string(format: .custom("MM-dd-yyyy"))
+        
         if segue.identifier == "wileySegue"{
          
             let destination = segue.destination as! DiningCourtViewController
-            
-            APIClient.sharedInstance.getMenu(diningCourt: "Wiley",date: "3-31-2017",success: {(items: JSON) in
+            destination.diningCourt = "Wiley"
+            APIClient.sharedInstance.getMenu(diningCourt: "Wiley",date: dateString,success: {(items: JSON) in
                 self.food = items
                 //print(items)
                 destination.data = self.food!
+                
                 
             }, error: { (error: Error) in
                 print(error.localizedDescription)
@@ -54,8 +59,9 @@ class MenusViewController: UIViewController {
         }else if segue.identifier == "fordSegue"{
             //print("ford")
             let destination = segue.destination as! DiningCourtViewController
-            
-            APIClient.sharedInstance.getMenu(diningCourt: "Ford",date: "3-31-2017",success: {(items: JSON) in
+            destination.diningCourt = "Ford"
+
+            APIClient.sharedInstance.getMenu(diningCourt: "Ford",date: dateString,success: {(items: JSON) in
                 self.food = items
                 //print(items)
                 destination.data = self.food!
@@ -66,11 +72,12 @@ class MenusViewController: UIViewController {
             })
         }else if segue.identifier == "earhartSegue"{
             let destination = segue.destination as! DiningCourtViewController
-            
-            APIClient.sharedInstance.getMenu(diningCourt: "Earhart",date: "3-31-2017",success: {(items: JSON) in
+             destination.diningCourt = "Earhart"
+            APIClient.sharedInstance.getMenu(diningCourt: "Earhart",date: dateString,success: {(items: JSON) in
                 self.food = items
                 //print(items)
                 destination.data = self.food!
+                
                 
             }, error: { (error: Error) in
                 print(error.localizedDescription)
@@ -79,11 +86,13 @@ class MenusViewController: UIViewController {
 
         }else if segue.identifier == "windsorSegue"{
             let destination = segue.destination as! DiningCourtViewController
+            destination.diningCourt = "Windsor"
             
-            APIClient.sharedInstance.getMenu(diningCourt: "Windsor",date: "3-31-2017",success: {(items: JSON) in
+            APIClient.sharedInstance.getMenu(diningCourt: "Windsor",date: dateString,success: {(items: JSON) in
                 self.food = items
                 //print(items)
                 destination.data = self.food!
+                
                 
             }, error: { (error: Error) in
                 print(error.localizedDescription)
@@ -92,11 +101,13 @@ class MenusViewController: UIViewController {
 
         }else if segue.identifier == "hillenbrandSegue" {
             let destination = segue.destination as! DiningCourtViewController
+            destination.diningCourt = "Hillenbrand"
             
-            APIClient.sharedInstance.getMenu(diningCourt: "Hillenbrand",date: "3-31-2017",success: {(items: JSON) in
+            APIClient.sharedInstance.getMenu(diningCourt: "Hillenbrand",date: dateString,success: {(items: JSON) in
                 self.food = items
                 //print(items)
                 destination.data = self.food!
+                
                 
             }, error: { (error: Error) in
                 print(error.localizedDescription)

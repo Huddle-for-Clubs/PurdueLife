@@ -13,6 +13,8 @@ pod 'AFNetworking'
 pod 'SwiftyJSON'
 pod 'Alamofire'
 pod 'MBProgressHUD'
+pod 'SwipeCellKit', '~> 1.7'
+pod 'SwiftDate', '~> 4.1.1'
 
   target 'PurdueLifeTests' do
     inherit! :search_paths

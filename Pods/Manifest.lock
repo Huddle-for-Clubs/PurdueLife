@@ -61,7 +61,9 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.8)
   - MBProgressHUD (1.0.0)
+  - SwiftDate (4.1.1)
   - SwiftyJSON (3.1.4)
+  - SwipeCellKit (1.7.0)
 
 DEPENDENCIES:
   - AFNetworking
@@ -70,7 +72,9 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - MBProgressHUD
+  - SwiftDate (~> 4.1.1)
   - SwiftyJSON
+  - SwipeCellKit (~> 1.7)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -87,8 +91,10 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SwiftDate: ae615078806a322183e5f64e02e80ca8d939bf48
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwipeCellKit: 73440541f03434eaedc158e5aed9bc1e0d9b898e
 
-PODFILE CHECKSUM: 68c55b5a3afa80866b85431ca50cc6bebe394348
+PODFILE CHECKSUM: 277744cb3ebf11a7f7b8a0cf2e0e75951a1c2044
 
 COCOAPODS: 1.1.1

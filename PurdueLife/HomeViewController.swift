@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import SwiftDate
 
 class HomeViewController: UIViewController {
     
     var food : [FoodItem] = []
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let date = DateInRegion()
+        let dateString = date.string(format: .custom("MM-dd-yyyy"))
+        
+        
+
                 
         
         
