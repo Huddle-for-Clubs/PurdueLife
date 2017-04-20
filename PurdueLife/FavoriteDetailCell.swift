@@ -10,6 +10,11 @@ import UIKit
 
 class FavoriteDetailCell: UITableViewCell {
 
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var stationLabel: UILabel!
+    @IBOutlet weak var mealLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

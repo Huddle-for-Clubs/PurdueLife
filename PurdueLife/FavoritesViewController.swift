@@ -58,19 +58,19 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
                
                 
             }else{
-//                let alert = UIAlertController(title: "Ooops!", message: "It looks like you don't have any likes!", preferredStyle: .alert)
-//                
-//                let ok = UIAlertAction(title: "OK", style: .cancel, handler: { (alert) in
-//                    self.parent?.dismiss(animated: true, completion:{
-//                        
-//                    })
-//                })
-//                
-//                alert.addAction(ok)
-//                
-//                self.present(alert, animated: true, completion: {
-//                    
-//                })
+                let alert = UIAlertController(title: "Ooops!", message: "It looks like you don't have any likes!", preferredStyle: .alert)
+                
+                let ok = UIAlertAction(title: "OK", style: .cancel, handler: { (alert) in
+                    //self.parent?.dismiss(animated: true, completion:{
+                        
+                   // })
+                })
+                
+                alert.addAction(ok)
+                
+                self.present(alert, animated: true, completion: {
+                    
+                })
 
                 
                 print("doesnt")
